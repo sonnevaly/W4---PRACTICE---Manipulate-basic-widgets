@@ -4,13 +4,26 @@ void main() {
   runApp(
     MaterialApp(
       home: Container(
-        padding: EdgeInsets.all(40),
-        margin: EdgeInsets.all(50),
-        decoration: BoxDecoration(color: Colors.blue[300],),
+        padding: EdgeInsets.all(40), 
+        margin: EdgeInsets.all(50), 
+        decoration: BoxDecoration(
+          color: Colors.blue[300], 
+        ),
         child: Container(
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(25), color: Colors.blue[600],),
+          padding: EdgeInsets.all(50),
+          decoration: BoxDecoration(
+            color: Colors.blue[600], 
+            borderRadius: BorderRadius.circular(25),
+          ),
           child: Center(
-            child: Text('CADT STUDENTS', style: TextStyle(color: Colors.white)),
+            child: Text(
+              'CADT STUDENTS',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 40, 
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ),
       ),
